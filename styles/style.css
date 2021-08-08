@@ -49,19 +49,23 @@ body{
 /* end styles of blogs site  */
 
 /* start of players section */
+.players-container{
+width: 80%;
+margin-left: 115px;
+margin-top: 20px;
+}
 
 .players{
-    margin-top: 140px;
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     grid-gap: 22px 20px;
+    margin-top: 140px;
     padding: 20px;
-    width: 90%;
     padding-left: 150px;
     margin-bottom: 20px;
 }
 .player{
-    width: 330px;
+    width: 310px;
     height: 470px;
     background-color: #FFFFFF;
     display: flex;
@@ -70,6 +74,7 @@ body{
     padding: 15px;
     box-shadow: 0 0 0.5px;
     padding-left: 20px;
+    border-radius: 5px;
 }
 .player img{
     width: 300px;
