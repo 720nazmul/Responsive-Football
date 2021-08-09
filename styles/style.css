@@ -87,3 +87,162 @@ margin-top: 20px;
     font-size: 16px;
     color: #6C6C6C;
 }
+/* end of styles player section */
+/* start of styles best player section */
+.best-container{
+    width: 1200px;
+    padding-left: 150px;
+}
+.title{
+    text-align: center;
+    font-size: 1.5em;
+    color:steelblue;
+    padding-left: 50px;
+    margin-top: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(210, 180, 140, 0.322);
+    margin-left: 200px;
+}
+.best-players{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap: 25px 23px;
+    margin-top: 140px;
+    padding: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.best-player{
+    width: 420px;
+    height: 360px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    box-shadow: 0 0 0.6px ;
+    padding-left: 20px;
+    border-radius:5px;
+}
+.best-player img{
+    width: 400px;
+    height: 340px;
+    border-radius: 20px;
+}
+.player-info{
+    position:absolute;
+    text-align: center;
+    display:none;
+    color: whitesmoke;
+}
+.detail{
+    font-size: .8em;
+}
+.best-player:hover .player-info{
+    display: block;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.329);
+    transition: 1s ease-in-out;
+}
+.best-player:hover{
+    transform: scale(1.1);
+}
+/* end of best player section */
+/* start of champions team section */
+
+.champ-title{
+    color: skyblue;
+    padding-left: 50px;
+    margin: 20px;
+    font-size: 1.5em;
+    background-color: rgba(153, 205, 50, 0.219);
+    width: 50%;
+}
+#year{
+    color: tomato;
+}
+.fa-trophy{
+color: tomato;
+}
+.champ-title:hover{
+    background-color:rgba(153, 205, 50, 0.562);
+    color:whitesmoke;
+}
+.lig-champ{
+    padding-left: 50px;
+    font-size: 1.1em;
+    color: violet;
+    width: 30%;
+}
+#club-name{
+    color: tomato;
+}
+.lig-champ:hover{
+    color:yellowgreen;
+    transform: scale(1.1);
+}
+#club-name:hover{
+    background-color: cornsilk;
+    color:black;
+}
+/* end of champions section */
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    align-items: center;
+    background-color: rgba(255, 235, 205, 0.486);
+}
+.top-banner img{
+    width: 500px;
+    height: 115px;
+}
+.icon-image{
+    width:50px;
+    height: 35px;
+    display: flex;
+    padding: 30px;
+    padding-right: 5%;
+    position: absolute;
+    margin-top: 60px;
+}
+.footer-info{
+    color: rgba(0, 0, 0, 0.849);
+    margin-top: 20px;
+}
+#credit{
+    color: orangered;
+}
+/* end of footer section */
+/* Media query */
+/* responsive mobile device */
+@media only screen and (max-width:688px) {
+    .container ,.players-container ,.best-container ,.champ-container ,.footer-container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+     .players , .best-players ,.champions{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+     .title{
+        flex-direction: column;
+        width: 70px;
+        background-color:white;
+    }
+    .container{
+        height: 800px;
+        left: 0px;
+        top: 0px;
+    }
+    .champions{
+        justify-content: center;
+    }
+}
+
+
